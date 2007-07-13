@@ -13,4 +13,6 @@ libkwsIO_la_SOURCES = \
 	kwsioDevice.cpp 
 
 libkwsIO_la_CPPFLAGS = -I$(srcdir)/../include @KINEO_CONTROLLER_CFLAGS@
-libkwsIO_la_LDFLAGS = @KINEO_CONTROLLER_LIBS@
+libkwsIO_la_LDFLAGS = \
+	@KINEO_CONTROLLER_LIBS@ 	\
+	-release ${PACKAGE_VERSION}
