@@ -1,0 +1,7 @@
+2007/04/22
+	1. Generate doxytag file to access documentation from depending packages
+	2. Documentation is compiled at installation.
+	
+2007/02/04
+	1. remove the function printConfig, printMat4, printVect3
+	2. add file kwsioMat.h and .cpp with the function "operator<<" define for CkitMat4 and CkitVect3
