@@ -10,8 +10,7 @@ kwsIOdir = $(datadir)/doc/kwsIO
 EXTRA_DIST = \
 	footer.html \
 	header.html \
-	kwsIO.css \
-	additionalDoc/kwsIO.h 
+	kwsIO.css
 
 
 install: html-doc
