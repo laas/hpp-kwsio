@@ -23,11 +23,7 @@ CkwsioPath::~CkwsioPath()
 {
 }
 
-#if 0
-std::ostream& CkwsioPath::operator<<(std::ostream& os) const
-#else
 std::ostream& operator<<(std::ostream& os, const CkwsioPath& ioPath)
-#endif
 {
   const CkwsPathShPtr& kwsPath = ioPath.kwsPath();
   double pathLength = kwsPath->length();

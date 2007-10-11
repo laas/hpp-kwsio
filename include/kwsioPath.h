@@ -51,10 +51,6 @@ private:
    
    Sample the path and write one configuration per line. The sample step is given by CkwsioPath::attSamplinStep.
 */
-#if 0
-std::ostream& CkwsioPath::operator<<(std::ostream& os) const;
-#else
 std::ostream& operator<<(std::ostream&, const CkwsioPath& ioPath);
-#endif
 
 #endif

@@ -229,7 +229,7 @@ VERBATIM_HEADERS       = NO
 # configuration options related to the HTML output
 #---------------------------------------------------------------------------
 HTML_OUTPUT            = html
-HTML_STYLESHEET        = @srcdir@/kwsPlus.css
+HTML_STYLESHEET        = @srcdir@/kwsIO.css
 HTML_HEADER            = @srcdir@/header.html
 HTML_FOOTER            = @srcdir@/footer.html
 

@@ -7,5 +7,5 @@ Name: @PACKAGE@
 Description: Extension to KineoWorks software Input/Output
 Version: @VERSION@
 Requires: KineoController
-Libs: -L${libdir} -lkwsIO @KINEO_CONTROLLER_LIBS@
-Cflags: -I${includedir}/kwsIO @KINEO_CONTROLLER_CFLAGS@
+Libs: -L${libdir} -lkwsIO 
+Cflags: -I${includedir}/kwsIO 

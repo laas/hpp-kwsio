@@ -1,5 +1,7 @@
+kwsIO release 1.0.1 October 11, 2007.
+
 2007/10/11
-	1. remade the fonction operator for kwsPath using CkwsioPath
+	1. Changed operator<< for CkwsPath using CkwsioPath
 	
 
 2007/04/22

@@ -5,7 +5,7 @@ dnl
 dnl   Author: Mathieu Poirier LAAS-CNRS
 dnl
 
-AC_INIT([kwsIO],[1.0],[openrobots@laas.fr])
+AC_INIT([kwsIO],[1.0.1],[openrobots@laas.fr])
 AC_PREREQ(2.59)
 
 AM_INIT_AUTOMAKE
