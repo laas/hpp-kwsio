@@ -1,3 +1,7 @@
+2007/10/11
+	1. remade the fonction operator for kwsPath using CkwsioPath
+	
+
 2007/04/22
 	1. Generate doxytag file to access documentation from depending packages
 	2. Documentation is compiled at installation.

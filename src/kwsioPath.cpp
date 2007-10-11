@@ -23,16 +23,22 @@ CkwsioPath::~CkwsioPath()
 {
 }
 
+#if 0
 std::ostream& CkwsioPath::operator<<(std::ostream& os) const
+#else
+std::ostream& operator<<(std::ostream& os, const CkwsioPath& ioPath)
+#endif
 {
-    const CkwsPathShPtr& kwsPath = attKwsPath;
-    double pathLength = kwsPath->length();
+  const CkwsPathShPtr& kwsPath = ioPath.kwsPath();
+  double pathLength = kwsPath->length();
 
-    for (double u=0 ; u <= pathLength ; u=u+attSamplingStep) {
+  double samplingStep = ioPath.samplingStep();
+  for (double u=0 ; u <= pathLength ; u=u+samplingStep) {
 //      std::cout << u << std::endl;
         CkwsConfigShPtr config = kwsPath->configAtDistance(u);
         os << *config << std::endl;
-}
+    }
 
     return os;
 }
+

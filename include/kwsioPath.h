@@ -28,19 +28,33 @@ public:
 
     ~CkwsioPath();
 
-    /**
-    \brief Write a CkwsPath in a file.
+  /**
+     \brief Get sampling step.
+  */
+  double samplingStep() const { return attSamplingStep; };
 
-    Sample the path and write one configuration per line. The sample step is given by CkwsioPath::attSamplinStep.
-*/
-    std::ostream& operator<<(std::ostream& os) const;
+  /**
+     \brief Get Path.
+  */
+  const CkwsPathShPtr& kwsPath() const { return attKwsPath; };
 
 private:
     /** 
     \brief Sampling step for writing the path in a file.
-*/
+    */
     CkwsPathShPtr attKwsPath;
     double attSamplingStep;
 };
+
+/**
+   \brief Write a CkwsPath in a file.
+   
+   Sample the path and write one configuration per line. The sample step is given by CkwsioPath::attSamplinStep.
+*/
+#if 0
+std::ostream& CkwsioPath::operator<<(std::ostream& os) const;
+#else
+std::ostream& operator<<(std::ostream&, const CkwsioPath& ioPath);
+#endif
 
 #endif
