@@ -6,7 +6,7 @@ dnl   Author: Mathieu Poirier LAAS-CNRS
 dnl
 
 AC_INIT([kwsIO],[1.0.1],[openrobots@laas.fr])
-AC_PREREQ(2.59)
+AC_PREREQ([2.65])
 
 AM_INIT_AUTOMAKE
 AC_PROG_INSTALL
@@ -16,16 +16,17 @@ AC_PROG_CXX
 
 dnl -- Kineo ---------------
 
-PKG_CHECK_MODULES(KINEO_CONTROLLER, KineoController)
-AC_SUBST(KINEO_CONTROLLER_CFLAGS)
-AC_SUBST(KINEO_CONTROLLER_LIBS)
+PKG_CHECK_MODULES([KINEO_CONTROLLER], [KineoController])
+AC_SUBST([KINEO_CONTROLLER_CFLAGS])
+AC_SUBST([KINEO_CONTROLLER_LIBS])
 
 dnl ------ HPP package ------
 
-AC_OUTPUT(Makefile
+AC_CONFIG_FILES([Makefile
 	src/Makefile
 	include/Makefile
 	doc/Makefile
 	doc/kwsIO.dox
-	kwsIO.pc
+	kwsIO.pc]
 )
+AC_OUTPUT([])
