@@ -9,6 +9,7 @@
 // Copyright: See COPYING file that comes with this distribution
 //
 //
+#include <vector>
 #include "kwsioConfig.h"
 
 
@@ -16,8 +17,12 @@
 std::ostream& operator<<(std::ostream& os, const CkwsConfig& config)
 {
   std::vector<double> vec;
+  CkwsConfig& nonconst = const_cast <CkwsConfig&> (config);
+  bool enabled = nonconst.isSelfValidationEnabled ();
+  nonconst.isSelfValidationEnabled (false);
   config.getDofValues(vec);
-  unsigned int dim = config.size();
+  nonconst.isSelfValidationEnabled (enabled);
+  std::vector<double>::size_type dim = vec.size();
   
   for (unsigned int i=0; i < dim; i++) {
     os << vec[i] << " ";
