@@ -5,17 +5,20 @@
 //
 //
 #include "kwsioDevice.h"
+#include <KineoWorks2/kwsDevice.h>
+#include <KineoWorks2/kwsJoint.h>
 
 
 
 std::ostream& operator<<(std::ostream& os, const CkwsDevice& inDevice)
 {
-  unsigned int nbDofs = inDevice.countDofs();
-  unsigned int nbExtraDofs = inDevice.countExtraDofs();
-
+  size_t nbDofs = inDevice.countDofs();
   os << "Number of dofs:" << nbDofs  << std::endl;
-  os << "Number of extra dofs:" << nbExtraDofs  << std::endl;
-
+  CkwsConfigSpaceShPtr extraConfigSpace =
+    inDevice.rootJoint ()->customSubspace ();
+  if (extraConfigSpace) {
+    os << "Number of extra dofs:" << extraConfigSpace->size ()  << std::endl;
+  }
   for (unsigned int iDof=0; iDof<nbDofs; iDof++) {
     CkwsDofShPtr dof = inDevice.dof(iDof);
     
