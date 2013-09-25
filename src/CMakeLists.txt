@@ -2,7 +2,7 @@ SET(LIBRARY_NAME ${PROJECT_NAME})
 
 ADD_LIBRARY(${LIBRARY_NAME}
   SHARED
-  config.cc
+  configuration.cc
   device.cc
   mat.cc
   path.cc
