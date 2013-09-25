@@ -4,8 +4,8 @@
 // Copyright: See COPYING file that comes with this distribution
 //
 //
-#ifndef KWSIO_DEVICE_H
-#define KWSIO_DEVICE_H
+#ifndef HPP_KWSIO_DEVICE_HH
+#define HPP_KWSIO_DEVICE_HH
 
 #include <iostream>
 
@@ -19,4 +19,4 @@
 */
 std::ostream& operator<<(std::ostream& os, const CkwsDevice& inDevice);
 
-#endif
+#endif // HPP_KWSIO_DEVICE_HH

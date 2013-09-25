@@ -9,8 +9,8 @@
 // Copyright: See COPYING file that comes with this distribution
 //
 //
-#ifndef KWSIOCONFIG_H
-#define KWSIOCONFIG_H
+#ifndef HPP_KWSIO_CONFIGURATION_HH
+#define HPP_KWSIO_CONFIGURATION_HH
 
 #include <iostream>
 
@@ -29,4 +29,4 @@ std::ostream& operator<<(std::ostream& os, const CkwsConfig& config);
 */
 std::istream& operator>>(std::istream& is, CkwsConfig& config);
 
-#endif
+#endif // HPP_KWSIO_CONFIGURATION_HH

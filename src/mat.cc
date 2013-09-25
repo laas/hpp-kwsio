@@ -7,7 +7,7 @@
 
 
 
-#include "kwsioMat.h"
+#include <hpp/kwsio/mat.hh>
 
 
 

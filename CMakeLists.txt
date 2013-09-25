@@ -4,7 +4,6 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 SET(CXX_DISABLE_WERROR TRUE)
 INCLUDE(cmake/base.cmake)
 INCLUDE(cmake/boost.cmake)
-INCLUDE(cmake/kineo.cmake)
 
 SET(PROJECT_NAME hpp-kwsio)
 SET(PROJECT_DESCRIPTION
@@ -15,11 +14,11 @@ SET(PROJECT_URL "")
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 SET(${PROJECT_NAME}_HEADERS
-  include/hpp-kwsio/kwsioConfig.h
-  include/hpp-kwsio/kwsioDevice.h
-  include/hpp-kwsio/kwsioInterface.h
-  include/hpp-kwsio/kwsioMat.h
-  include/hpp-kwsio/kwsioPath.h
+  include/hpp/kwsio/configuration.hh
+  include/hpp/kwsio/device.hh
+  include/hpp/kwsio/interface.hh
+  include/hpp/kwsio/mat.hh
+  include/hpp/kwsio/path.hh
   )
 
 SETUP_PROJECT()

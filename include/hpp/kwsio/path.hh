@@ -9,8 +9,8 @@
 // Copyright: See COPYING file that comes with this distribution
 //
 //
-#ifndef KWSIOPATH_H
-#define KWSIOPATH_H
+#ifndef HPP_KWSIO_PATH_HH
+#define HPP_KWSIO_PATH_HH
 
 #include <iostream>
 
@@ -53,4 +53,4 @@ private:
 */
 std::ostream& operator<<(std::ostream&, const CkwsioPath& ioPath);
 
-#endif
+#endif // HPP_KWSIO_PATH_HH

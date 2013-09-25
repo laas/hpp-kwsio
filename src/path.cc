@@ -10,8 +10,8 @@
 //
 //
 
-#include "kwsioPath.h"
-#include "kwsioConfig.h"
+#include <hpp/kwsio/path.hh>
+#include <hpp/kwsio/configuration.hh>
 
 CkwsioPath::CkwsioPath(const CkwsPathShPtr& inKwsPath, double inSamplingStep):
     attKwsPath(inKwsPath), attSamplingStep(inSamplingStep)

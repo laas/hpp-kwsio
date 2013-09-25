@@ -2,10 +2,10 @@ SET(LIBRARY_NAME ${PROJECT_NAME})
 
 ADD_LIBRARY(${LIBRARY_NAME}
   SHARED
-  kwsioConfig.cpp
-  kwsioDevice.cpp
-  kwsioMat.cpp
-  kwsioPath.cpp
+  config.cc
+  device.cc
+  mat.cc
+  path.cc
   )
 
 SET_TARGET_PROPERTIES(${LIBRARY_NAME} PROPERTIES SOVERSION ${PROJECT_VERSION})

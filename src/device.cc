@@ -4,7 +4,7 @@
 // Copyright: See COPYING file that comes with this distribution
 //
 //
-#include "kwsioDevice.h"
+#include <hpp/kwsio/device.hh>
 #include <KineoWorks2/kwsDevice.h>
 #include <KineoWorks2/kwsJoint.h>
 

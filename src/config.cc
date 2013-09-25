@@ -10,7 +10,7 @@
 //
 //
 #include <vector>
-#include "kwsioConfig.h"
+#include <hpp/kwsio/configuration.hh>
 
 
 

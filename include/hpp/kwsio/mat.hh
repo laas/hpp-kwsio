@@ -5,8 +5,8 @@
  
 */
 
-#ifndef  __KWS_IO_PRINT_MAT_H__
-#define  __KWS_IO_PRINT_MAT_H__
+#ifndef  HPP_KWSIO_MAT_HH
+#define  HPP_KWSIO_MAT_HH
 
 #include <iostream>
 #include "KineoWorks2/kwsConfig.h"
@@ -28,7 +28,7 @@ std::ostream& operator<<(std::ostream& os, const CkitVect3& kitVect3);
 
 
 
-#endif
+#endif // HPP_KWSIO_MAT_HH
 
 
 
