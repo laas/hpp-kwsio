@@ -1,1 +1,6 @@
-No news is good news.
+                                                                -*- outline -*-
+
+New in 1.2, 2013-09-25:
+* Switched package to CMake.
+* Package renamed to hpp-kwsio
+* Headers are now installed in include/hpp/kwsio/
